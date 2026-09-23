@@ -1,0 +1,92 @@
+# Ukrainian strings for the module's own screens.
+#
+# `[module]` is read by the *host* for the card and the tab; everything else is
+# read by the module for its own screens.
+
+[module]
+title = "Автозапуски парку"
+description = "Показує, що запускається саме на хостах парку CrowdStrike, через RTR — ключі Run, служби, заплановані завдання й теки автозавантаження Windows; systemd, cron та XDG autostart у Linux; агенти й демони запуску macOS."
+
+[ui]
+title = "Автозапуски парку"
+subtitle = "Що запускається саме на кожному хості, зчитано через RTR — ключі Run, служби й завдання у Windows; systemd, cron і autostart у Linux."
+fetch_hosts = "Отримати хости"
+scan_selected = "Сканувати вибрані"
+scan_all = "Сканувати всі"
+stop = "Зупинити"
+search = "Пошук"
+search_hint = "назва, команда, джерело…"
+filter = "Фільтрувати"
+reachable = "Доступні хости ({n}) — позначте ті, які сканувати"
+no_reachable = "Доступних хостів немає. Для RTR хост має бути в мережі."
+scanned = "Проскановано ({n}) — подвійний клік на хості відкриє його автозапуски"
+open_host = "Відкрити автозапуски"
+not_scanned = "Не проскановано ({n})"
+col_host = "Хост"
+col_why = "Причина"
+shown_of = "показано {shown} з {total}"
+no_match = "Нічого не знайдено."
+
+[state]
+queued = "очікує"
+scanning = "сканування…"
+done = "готово"
+failed = "помилка"
+stopped = "зупинено"
+skipped = "ОС не підтримується"
+failed_why = "помилка — {why}"
+
+[status]
+reachable = "Доступних хостів: {n}"
+fetch_failed = "не вдалося отримати список: {err}"
+none_selected = "не вибрано жодного хоста — позначте хоча б один"
+already_running = "сканування вже триває"
+starting = "сканування {n} хост(ів)…"
+progress = "сканування — {done} з {total} готово, записів поки що: {items}"
+scanned = "проскановано хостів: {n}"
+items = "записів: {n}"
+failed = "з помилкою: {n}"
+stopped = "зупинено: {n}"
+unsupported = "не підтримується: {n}"
+stopping = "зупиняємо — хости, вже в роботі, завершаться"
+
+[host]
+unknown = "Цього хоста немає в останньому скануванні."
+summary = "записів автозапуску: {n}"
+enabled = "Увімкнені ({n})"
+disabled = "Вимкнені ({n})"
+nothing_enabled = "Увімкнених немає."
+nothing_disabled = "Вимкнених немає."
+
+[col]
+source = "Джерело"
+name = "Назва"
+command = "Команда"
+scope = "Область"
+enabled = "Увімкнено"
+location = "Розташування"
+yes = "так"
+no = "ні"
+
+[entry]
+about = "Про запис"
+gone = "Цього запису вже немає в останньому скануванні."
+window = "Запис"
+unnamed = "(без назви)"
+is_enabled = "Увімкнено"
+is_disabled = "Вимкнено"
+host = "Хост"
+command = "Команда"
+kind = "Вид"
+starts_for = "Запускається для"
+location = "Розташування"
+falcon_id = "Ідентифікатор хоста Falcon"
+
+[ui2]
+col_entries = "Записів"
+col_enabled = "Увімкнено"
+col_disabled = "Вимкнено"
+
+[note]
+truncated = "понад {n} записів — список скорочено"
+empty = "хост не повідомив про жодні автозапуски"
