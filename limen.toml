@@ -1,7 +1,7 @@
 [module]
 name = "crowdstrike-autoruns"
 display_name = "Fleet autoruns"
-version = "0.1.0"
+version = "0.2.0"
 language = "python"
 entry = "main.py"
 description = "List what auto-starts on CrowdStrike fleet hosts over RTR — Windows Run keys, services, scheduled tasks and startup folders; Linux systemd, cron and XDG autostart; macOS launch agents and daemons."
