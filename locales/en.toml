@@ -89,3 +89,21 @@ col_disabled = "Disabled"
 [note]
 truncated = "more than {n} entries — list cut short"
 empty = "the host reported nothing that auto-starts"
+
+# The report, when a report provider is installed.
+[report]
+make = "Make Report"
+title = "Fleet Autoruns Report"
+title_host = "Autoruns Report"
+subtitle_fleet = "{hosts} host(s) · {n} autostart entr(ies)"
+subtitle_host = "{host} · {n} autostart entr(ies)"
+hosts = "Hosts ({n})"
+by_source = "Entries by source"
+line_hosts = "Hosts read: {n}"
+line_items = "Autostart entries: {n}"
+line_a = "Enabled: {n}"
+line_b = "Disabled: {n}"
+line_not_read = "Hosts not read: {n}"
+nothing = "Nothing has been scanned yet."
+written = "Report written"
+failed = "Couldn't build the report"
